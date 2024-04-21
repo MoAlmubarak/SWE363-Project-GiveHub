@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="Navbar.css">
+        <link rel="stylesheet" href="Navbar.jsx">
+        
+        <title>Contact GiveHub</title>
+
+        <style>
+            nav {
+                padding: 10px;
+                border-bottom: 2px gray solid;
+            }
+    
+            nav ul {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            nav .give {
+                margin-right: auto;
+            }
+    
+            nav .right-elements {
+                display: flex;
+                align-items: center;
+            }
+    
+            nav .right-elements a {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+    
+            nav a {
+                text-decoration: none;
+                color: black;
+            }
+
+            main{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: sans-serif;
+                line-height: 1.5;
+                min-height: 100vh;
+                flex-direction: column;           
+            }
+            .contact-box {
+                border: 2px solid gray;
+                border-radius: 10px;
+                padding: 30px; 
+                text-align: center;
+            }
+
+
+            
+
+            .contact-box input, textarea{
+                margin: 10px;
+                border-radius: 5px ;
+            }
+            
+
+         
+        </style>
+    </head>
+
+    <body>
+        
+        <nav>
+            <ul>
+                <li><h1><a href="#" class="give">GiveHub</a></h1></li>
+
+                <li><b><a href="#">HOME</a></b></li>
+                <li><b><a href="#">ADD PRODUCT</a></b></li>
+                <li><b><a href="#">ABOUT US</a></b></li>
+                <li><b><a href="#">SUPPORT</a></b></li>
+                <li><b><a href="#">ACCOUNT</a></b></li>
+
+                <li class="right-elements">
+                    <h6><a href="#">SEARCH</a></h6>
+                    <h6><a href="#">CARD</a></h6>
+                </li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <form action="">
+            <div class="contact-box">
+                <h2>Contact GiveHub Team!</h2>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Your Phone number" required>
+                <br>
+                <textarea name="message" id="message" cols="20" rows="5">Your message</textarea>
+                <br>
+                <button type="submit" style="width: 150px; height: 35px; background-color: darkturquoise; color: white; border-color: white; border-radius: 5px;">Send</button>
+            </div>
+            </form>
+
+            <a href="Sign-in.html"> back to sign in</a>
+
+        </main>
+
+       
+        
+    </body>
+</html>
