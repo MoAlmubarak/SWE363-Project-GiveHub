@@ -10,6 +10,9 @@ import Contact from './homePage/Contact/Contact';
 import SignIn from './Sign-in-up/SignIn/SignIn';
 import SignUp from './Sign-in-up/SignUp/SignUp';
 import AddProduct from './Donating/AddProduct/AddProduct';
+import CartPage from './Buying/CartPage/CartPage';
+import ProductsPage from './Buying/ProductsPage/ProductsPage';
+import ConfirmationPage from './Buying/CartPage/ConfirmationPage';
 
 const App = () => {
   return (
@@ -35,6 +38,9 @@ const App = () => {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/add-product" element={<AddProduct />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/products-page" element={<ProductsPage />} />
+          <Route path="/confirmation" element={<ConfirmationPage />} />
         </Routes>
       </div>
     </Router>
